@@ -6,6 +6,15 @@
   background-color: aqua;
 }
 
+.second{
+  height: 50px;
+  width: 50px;
+  background-color: #7b9e31;
+}
+input{
+  border-top: 10px;
+  border: aqua;
+}
 .userinfo {
   display: flex;
   flex-direction: column;

@@ -1,7 +1,19 @@
 <!--index.wxml-->
 <view class="container">
-    <view>{{message}}</view>
-    <view>{{  'hello'  }}</view>
+    <!-- <view>{{message}}</view>
+    <view>{{  jay.name  }}</view>
     <view>{{ 100>59 ? '对了' : '错了'}}</view>
-    <view class="first"></view>
+    <view class="{{viewClassName}}"></view>
+    <view wx:for="{{todos}}" wx:for-item="node">
+        <!-- item表示循环数组中的每一个元素，如果data中定义了同名的方法，那么就需要
+        用wx:for-item= "xxx"重新命名-->
+        <!-- <checkbox checked="{{node.checked}}"></checkbox>
+        <text>{{node.name}}</text> --> 
+    <!-- </view> -->
+    <!-- <view bindtap="tapName" class="{{viewClassName}}">
+        <view catchtap="tapNameTwo" class="second"></view>
+    </view> -->
+    <!-- <button bindtap="tapName">点击</button> -->
+    <input bindinput="inputName" value="{{message}}"/>
+    <text>{{message}}</text>
 </view>
