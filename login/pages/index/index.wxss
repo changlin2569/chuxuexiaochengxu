@@ -29,3 +29,15 @@
   border-style: groove;
   border-radius: 5px;
 }
+
+.content{
+  width: 190px;
+  height: 30px;
+  background-color: #aaa;
+}
+
+.content{
+  width: 190px;
+  height: 100px;
+  background-color: #aaa;
+}

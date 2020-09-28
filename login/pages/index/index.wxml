@@ -1,7 +1,31 @@
 <!--index.wxml-->
 <view class="container">
-   <input class="username" type="text" bindinput="nameHandle" value="{{username}}" placeholder="请输入用户名"/>
-   <input class="userpassword" type="password" bindinput="passwordHandle" value="{{userpassword}}" placeholder="请输入密码"/>
+   <!-- <input class="username" type="text" bindinput="nameHandle" value="{{username}}" placeholder="请输入用户名"/>
+   <input class="userpassword" type="password" bindinput="passwordHandle" value="{{userpassword}}" placeholder="请输入密码"/> -->
+
+   <!-- 第二种封装函数实现数据双向绑定 -->
+   <!-- <input class="username" type="text" bindinput="inputHandle" data-propo="username" value="{{username}}" placeholder="请输入用户名"/>
+   <input class="userpassword" type="password" bindinput="inputHandle" data-propo="userpassword" value="{{userpassword}}" placeholder="请输入密码"/>
    <button type="primary" bindtap="loginhandle" >登录</button>
-   <button type="default" >注册</button>
+   <button type="default" >注册</button> -->
+   <!-- 第三种直接表单方法 -->
+   <form action="" bindsubmit="loginhandle">
+      <input class="username" name="username" type="text" data-propo="username" value="{{username}}" placeholder="请输入用户名" />
+      <input class="userpassword" name ="userpassword" type="password" data-propo="userpassword" value="{{userpassword}}" placeholder="请输入密码" />
+      <button type="primary" form-type="submit">登录</button>
+      <button type="default">注册</button>
+   </form>
+   <view class="title" bindtap="showTime">  
+      <text>显示文本内容</text>
+   </view>
+   <block>
+      <view class="content"  hidden="{{ show }}">
+      <iext>显示内容</iext>
+      <iext>显示内容</iext>
+      <iext>显示内容</iext>
+   </view>
+   </block>
+   <view class="title">
+      标题
+   </view>
 </view>
