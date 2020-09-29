@@ -1,0 +1,73 @@
+<view class="root">
+  <!-- 顶部部分 -->
+  <view class="toplis">
+    <text>个性推荐</text>
+    <text>歌单</text>
+    <text>主播电台</text>
+    <text>排行榜</text>
+  </view>
+  <!-- 内容部分 -->
+  <scroll-view class="content" scroll-y="true">
+    <!-- 轮播图 -->
+    <view class="slider">
+      <image src="../../images/slide.png" alt="" />
+    </view>
+    <!-- 中部菜单 -->
+    <view class="banner">
+      <view class="item">
+        <image src="../../images/04.png"></image>
+        <text>私人FM</text>
+      </view>
+      <view class="item">
+        <image src="../../images/05.png"></image>
+        <text>每日歌曲推荐</text>
+      </view>
+      <view class="item">
+        <image src="../../images/06.png"></image>
+        <text>云音乐新歌榜</text>
+      </view>
+    </view>
+    <!-- 下部菜单栏 -->
+    <view class="musiclis">
+      <view class="item">
+        <image src="../../images/w1.jpg"></image>
+        <text>有人默默地陪在你的身边</text>
+      </view>
+      <view class="item">
+        <image src="../../images/w2.jpg"></image>
+        <text>有人默默地陪在你的身边</text>
+      </view>
+      <view class="item">
+        <image src="../../images/w3.jpg"></image>
+        <text>有人默默地陪在你的身边</text>
+      </view>
+      <view class="item">
+        <image src="../../images/w4.png"></image>
+        <text>有人默默地陪在你的身边</text>
+      </view>
+      <view class="item">
+        <image src="../../images/w5.jpg"></image>
+        <text>有人默默地陪在你的身边</text>
+      </view>
+      <view class="item">
+        <image src="../../images/w6.jpg"></image>
+        <text>有人默默地陪在你的身边</text>
+      </view>
+    </view>
+  </scroll-view>
+  <!--底部部分 -->
+  <view class="bottomlis">
+    <view class="musicimg">
+      <image src="../../images/post.jpg" alt="" />
+    </view>
+    <view class="singer">
+      <text class="songmsg">等你下课</text>
+      <text class="singermsg">周杰伦</text>
+    </view>
+    <view class="player">
+      <image src="../../images/01.png"></image>
+      <image src="../../images/02.png"></image>
+      <image src="../../images/03.png"></image>
+    </view>
+  </view>
+</view>
