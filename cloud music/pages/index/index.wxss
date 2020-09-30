@@ -3,6 +3,7 @@ page{
 }
 .root{
   display: flex;
+  /* display: block; */
   flex-direction: column;
   height: 100%;
 }
@@ -68,9 +69,9 @@ page{
 
 .content .musiclis .item image{
   display: block;
-  width: 100px;
-  height: 100px;
-  /* margin: 10px auto; */
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
 }
 
 .content .musiclis .item text{

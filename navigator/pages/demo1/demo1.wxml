@@ -1,0 +1,13 @@
+<!--pages/demo1/demo1.wxml-->
+<navigator url="../demo2/demo2">点击跳转</navigator>
+
+<!-- 页面间传值，改变点击样式 -->
+<!-- redirect  跳转后不允许回到当前界面 -->
+<navigator url="../demo2/demo2?name=小周&age=18" redirect >小周</navigator>
+<navigator hover-class="visited">小李</navigator>
+<navigator hover-class="none">小李</navigator>
+
+
+<!-- 违背的元素添加点击高亮样式 -->
+<!-- 添加cursor pointer  但无法自定义点击样式-->
+<image src="../../images/w6.jpg"></image>

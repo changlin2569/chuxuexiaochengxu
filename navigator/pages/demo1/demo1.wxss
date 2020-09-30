@@ -1,0 +1,9 @@
+/* pages/demo1/demo1.wxss */
+
+.visited{
+  color: aqua;
+}
+
+image{
+  cursor: pointer;
+}
