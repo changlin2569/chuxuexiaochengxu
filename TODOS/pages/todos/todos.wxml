@@ -1,0 +1,21 @@
+<view class="container">
+  <!-- 上部 -->
+  <view class="header">
+    <image src="../../images/plus.png"></image>
+    <input type="text" placeholder="input message" value="{{input}}" bindinput="inputHandle" />
+  </view>
+  <!-- 任务列表 -->
+  <view class="content" >
+    <view class="item"    wx:for="{{ todos }}">
+      <icon type="{{ item.completed ? 'success' : 'circle' }}"></icon>
+      <text>{{ item.name }}</text>
+      <icon type="clear"></icon>
+    </view>
+  </view>
+  <!-- 底部 -->
+  <view class="footer">
+  <text>Toggle all</text>
+  <text>3 item left</text>
+  <text>Clear completed</text>
+  </view>
+</view>

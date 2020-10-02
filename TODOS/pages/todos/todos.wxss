@@ -1,0 +1,51 @@
+/* pages/todos/todos.wxss */
+.container{
+  padding: 0;
+  margin-top: 2rpx solid #e0e0ee;
+}
+.header{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding: 10rpx;
+  border: 2rpx solid #e0e0ee;
+  border-radius: 20rpx;
+  box-shadow:0 0 10rpx darkolivegreen;
+}
+
+.header image{
+  height: 45rpx;
+  width: 45rpx;
+  margin-right: 20rpx;
+}
+
+.content{
+  width: 90%;
+  margin: 50rpx 50rpx 0 50rpx;
+}
+
+.content .item{
+  display: flex;
+  padding: 10rpx;
+  margin-bottom: 30rpx;
+  border-bottom: 2rpx solid #e0e0e0;
+  justify-content: space-between;
+}
+
+.content .item text{
+  padding-left: 10rpx;
+}
+
+.content .item text{
+  flex: 1;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.footer text{
+  font-size: 30rpx;
+  color: #a6a6a6;
+}

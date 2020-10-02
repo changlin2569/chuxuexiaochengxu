@@ -1,6 +1,15 @@
 // pages/demo3/demo3.js
 Page({
 
+  back : function(){
+    // console.log(111);
+    wx:wx.navigateBack({
+      delta: 2,//数字便是返回的页面数，如果超出页面数则返回首页
+      success: (res) => {},
+      fail: (res) => {},
+      complete: (res) => {},
+    })
+  },
   /**
    * 页面的初始数据
    */

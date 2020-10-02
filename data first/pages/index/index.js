@@ -34,6 +34,7 @@ Page({
     this.setData({
       message: e.detail.value
     })
+    console.log(this.data);
     
   }
 })

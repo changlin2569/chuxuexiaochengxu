@@ -11,3 +11,6 @@
 <!-- 违背的元素添加点击高亮样式 -->
 <!-- 添加cursor pointer  但无法自定义点击样式-->
 <image src="../../images/w6.jpg"></image>
+
+<!-- 实现脚本跳转 -->
+<button type="primary" bindtap="transfer">点击跳转</button>
