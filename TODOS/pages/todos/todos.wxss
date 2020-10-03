@@ -34,10 +34,12 @@
 
 .content .item text{
   padding-left: 10rpx;
+  flex: 1;
 }
 
-.content .item text{
-  flex: 1;
+.content .item .completed{
+  text-decoration: line-through;
+  color: #a6a6a6;
 }
 
 .footer{

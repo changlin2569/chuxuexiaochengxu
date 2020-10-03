@@ -1,21 +1,27 @@
 <view class="container">
   <!-- 上部 -->
   <view class="header">
-    <image src="../../images/plus.png"></image>
+    <image src="../../images/plus.png" bindtap="addHandle"></image>
     <input type="text" placeholder="input message" value="{{input}}" bindinput="inputHandle" />
   </view>
-  <!-- 任务列表 -->
-  <view class="content" >
-    <view class="item"    wx:for="{{ todos }}">
-      <icon type="{{ item.completed ? 'success' : 'circle' }}"></icon>
-      <text>{{ item.name }}</text>
-      <icon type="clear"></icon>
+  <block wx:if="{{ todos.length }}">
+    <!-- 任务列表 -->
+    <view class="content">
+      <view class="item" wx:for="{{ todos }}" bindtap="carryHandle" data-index="{{ index }}">
+        <icon type="{{ item.completed ? 'success' : 'circle' }}"></icon>
+        <text class="{{ item.completed ? 'completed': '' }}">{{ item.name}}</text>
+        <icon type="clear" size="16" catchtap="removeHandle" data-index="{{ index }}"></icon>
+      </view>
     </view>
-  </view>
-  <!-- 底部 -->
-  <view class="footer">
-  <text>Toggle all</text>
-  <text>3 item left</text>
-  <text>Clear completed</text>
+    <!-- 底部 -->
+    <view class="footer">
+      <text bindtap="toggleHandle">Toggle all</text>
+      <text>{{ idem }} {{idem>1 ? 'items' : 'item'}} left</text>
+      <text bindtap="removeAllHandle">Clear completed</text>
+    </view>
+  </block>
+  <!-- 无任务展示界面 -->
+  <view wx:else>
+    恭喜你，完成了所有任务
   </view>
 </view>
