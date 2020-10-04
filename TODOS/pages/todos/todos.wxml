@@ -2,7 +2,7 @@
   <!-- 上部 -->
   <view class="header">
     <image src="../../images/plus.png" bindtap="addHandle"></image>
-    <input type="text" placeholder="input message" value="{{input}}" bindinput="inputHandle" />
+    <input type="text" placeholder="input message" value="{{input}}" bindinput="inputHandle" bindconfirm="addHandle"/>
   </view>
   <block wx:if="{{ todos.length }}">
     <!-- 任务列表 -->
