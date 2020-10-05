@@ -2,7 +2,7 @@
 .slide{
   height: 380rpx;
 }
-
+.slide navigator,
 .slide image{
   height: 100%;
   width: 100%;

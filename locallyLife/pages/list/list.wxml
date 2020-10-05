@@ -1,0 +1,17 @@
+<view class="header">
+  <input type="text" placeholder="搜索"/>
+  <icon type="search" size="20" ></icon>
+</view>
+<!-- 列表 -->
+<view class="list">
+  <view class="list-item">
+    <image/>
+    <view class="message">
+      <text class="name" ></text>
+      <text class="number"></text>
+      <text class="address"></text>
+      <text class="time"></text>
+    </view>
+    <view class="score"></view>
+  </view>
+</view>

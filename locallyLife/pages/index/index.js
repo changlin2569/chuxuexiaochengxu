@@ -1,17 +1,60 @@
 // pages/index/index.js
+const fetch = require('../../utills/fetch')
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    slides: [],
+    categories: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // wx.request({
+    //   url: 'https://locally.uieee.com/slides',
+    //   success: res => {
+    //     // console.log(res);
+    //     this.setData({
+    //       slides:res.data
+    //     })
+    //   }
+    // })
+    fetch('slides').then(res => {
+      //  console.log(res);
+      this.setData({
+        slides: res.data
+      })
+    })
+    // wx.request({
+    //   url: 'https://locally.uieee.com/categories',
+    //   success: res => {
+    //     // console.log(res);
+    //     this.setData({
+    //       categories:res.data
+    //     })
+    //   }
+    // })
+    fetch('categories').then(res => {
+      // console.log(res);
+      this.setData({
+        categories: res.data
+      })
+    })
+    // wx.request({
+    //   url: 'https://api.douban.com/v2/movie/coming_soon',
+    //   header:{
+    //     'Content-Type': 'json'
+    //   },
+    //   success: function (res){
+    //     console.log(res);
+    //   }
+    // })
+
 
   },
 
