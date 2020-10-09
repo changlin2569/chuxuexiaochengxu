@@ -1,0 +1,43 @@
+page{
+    background-color: #e3e8f2;
+}
+.header{
+    position: relative;
+    width: 750rpx;
+    height: 488rpx;
+    background-color: #3a4862;
+}
+.header .avatar{
+    position: absolute;
+    width: 204rpx;
+    height: 204rpx;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.header .avatar image{
+    /* display: block; */
+    width: 204rpx;
+    height: 204rpx;
+}
+
+.container{
+    padding: 0;
+    padding-left: 20rpx;
+    padding-right: 30rpx;
+    margin-top: 20rpx;
+    background-color: #fff;
+}
+.container navigator{
+    display: block;
+    width: 100%;
+    font-size: 40rpx;
+    padding: 10rpx;
+    color: #5b5b5b;
+}
+
+.container navigator .right{
+    float: right;
+}

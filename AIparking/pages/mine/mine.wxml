@@ -1,0 +1,27 @@
+<view class="header">
+  <navigator class="avatar">
+    <image src="/images/icon/avatar.png" />
+  </navigator>
+</view>
+<view class="container">
+  <navigator >
+    <text >AI停车信息</text>
+    <text class="right">></text>
+  </navigator >
+  <navigator >
+    <text >常见问题</text>
+    <text class="right" >></text>
+    </navigator >
+  <navigator >
+    <text >账单</text>
+    <text class="right"  >></text>
+    </navigator >
+  <navigator >
+    <text >计时计费</text>
+    <text class="right" >></text>
+    </navigator >
+  <navigator >
+    <text >设置</text>
+    <text class="right" >></text>
+    </navigator >
+</view>

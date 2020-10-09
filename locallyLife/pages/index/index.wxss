@@ -20,7 +20,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 250rpx;
+  width: 33.33333333333%;
   height: 250rpx;
   /* border: 1rpx solid #999999; */
   border-right: 1rpx solid #b6b6b6 ;

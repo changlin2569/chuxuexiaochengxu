@@ -1,20 +1,20 @@
 <view class="header">
-  <input type="text" placeholder="搜索"/>
-  <icon type="search" size="20" ></icon>
+  <input type="text" placeholder="搜索" />
+  <icon type="search" size="20"></icon>
 </view>
 <!-- 列表 -->
 <view class="list">
-  <view class="list-item" wx:for="{{shops}}">
+  <navigator class="list-item" wx:for="{{shops}}">
     <image src="{{item.images[0]}}" />
     <view class="message">
-      <text class="name" >{{item.name}}</text>
+      <text class="name">{{item.name}}</text>
       <text class="number">电话：{{item.phone}}</text>
       <text class="address">地址：{{item.address}}</text>
       <text class="time">时间：{{item.businessHours}}</text>
     </view>
     <view class="score">{{item.score}}</view>
-  </view>
+  </navigator>
 </view>
 
 <view wx:if="{{!shopslimit}}" class="loadmore loading">正在加载...</view>
-<view wx:else class="nomore" >没有更多了</view>
+<view wx:else class="nomore">没有更多了</view>

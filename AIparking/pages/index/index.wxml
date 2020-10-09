@@ -1,0 +1,33 @@
+<view class="header">
+  <swiper>
+    <swiper-item >
+      <navigator >
+        <image src="/images/post/post.jpg" mode="aspectFill"/>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="container">
+  <view class="user">
+    <image src="/images/assest/login.png" />
+    <text >未登录</text>
+  </view>
+  <view class="list">
+    <view class="item">
+      <image src="/images/assest/search.png" />
+      <text >查找车位</text>
+    </view>
+    <view class="item">
+      <image src="/images/assest/message.png" />
+      <text >停车信息</text>
+    </view>
+    <view class="item">
+      <image src="/images/assest/shishi.png" />
+      <text >实时车况</text>
+    </view>
+    <view class="item">
+      <image src="/images/assest/kefu.png" />
+      <text >客服中心</text>
+    </view>
+  </view>
+</view>

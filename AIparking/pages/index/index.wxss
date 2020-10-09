@@ -1,0 +1,56 @@
+page{
+  background-color: #e3e8f2;
+}
+
+.header{
+  width: 750rpx;
+  height: 360rpx;
+}
+.header image{
+  width: 750rpx;
+  height: 380rpx;
+}
+
+.container{
+  width: 100%;
+  padding: 0;
+  background-color: #fff;
+}
+
+.container image{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.container text{
+  display: block;
+  font-size: 35rpx;
+  color: #777575;
+}
+
+.container .user{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10rpx;
+  border-bottom: 2rpx dashed #777575;
+}
+
+.container .user text{
+  /* display: inline-block; */
+  margin-left: 20rpx;
+}
+
+.container .list{
+  display: flex;
+  width: 100%;
+  padding: 20rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .list .item{
+  text-align: center;
+  width: 25%;
+  height: 25%;
+}
