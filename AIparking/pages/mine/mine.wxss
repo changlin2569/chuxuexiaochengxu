@@ -9,6 +9,7 @@ page{
 }
 .header .avatar{
     position: absolute;
+    text-align: center;
     width: 204rpx;
     height: 204rpx;
     top: 0;
@@ -19,8 +20,12 @@ page{
 }
 .header .avatar image{
     /* display: block; */
-    width: 204rpx;
-    height: 204rpx;
+    width: 174rpx;
+    height: 174rpx;
+}
+
+.header .avatar text{
+    color: #fff;
 }
 
 .container{

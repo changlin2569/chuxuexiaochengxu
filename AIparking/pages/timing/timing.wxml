@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="message">
+    <text>停车时长(3元/小时)</text>
+  </view>
+  <view class="time"  bindtap="formateDate">
+    <view class="timing" >
+      <text>{{ formateTime }}</text>
+    </view>
+  </view>
+  <view class="money">
+    <view class="cost">
+      <text>花费:{{cost}}元</text>
+    </view>
+    <view class="number">陕A88888</view>
+  </view>
+</view>

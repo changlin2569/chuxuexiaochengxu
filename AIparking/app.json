@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/message/message",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/timing/timing",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -11,7 +13,7 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#999",
+    "color": "#888",
     "selectedColor": "#444",
     "backgroundColor": "#fff",
     "borderStyle": "black",

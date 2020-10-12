@@ -1,0 +1,66 @@
+/* pages/search/search.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+map{
+  width: 100%;
+  height: 100%;
+}
+
+.container .search{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 50rpx;
+  width: 200rpx;
+  height: 200rpx;
+  background-color: skyblue;
+  border-radius: 50%;
+  z-index: 9;
+}
+
+.container .search image{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.container .search text{
+  color: #ebebeb;
+  font-size: 30rpx;
+}
+
+.container .address{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 50rpx;
+  right: 50rpx;
+  width: 100rpx;
+  height: 100rpx;
+  background-color: skyblue;
+  border-radius: 50%;
+  z-index: 9;
+}
+
+.container .address image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.container .add{
+  width: 20rpx;
+  height: 20rpx;
+}

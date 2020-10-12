@@ -1,0 +1,12 @@
+<view class="container">
+  <map name="" longitude="{{markers[0].longitude}}" latitude="{{markers[0].latitude}}" markers="{{markers}}" scale="15"
+    enable-3D="true">
+  </map>
+  <view class="search" bindtap="searchLocation">
+    <image src="/images/icon/search.png" ></image>
+    <text>查找车位</text>
+  </view>
+  <view class="address" bindtap="getLocation">
+    <image src="/images/icon/position.png" ></image>
+  </view>
+</view>
