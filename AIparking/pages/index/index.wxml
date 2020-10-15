@@ -23,7 +23,7 @@
     </navigator>
     <navigator class="item">
       <image src="/images/assest/shishi.png" />
-      <text >实时车况</text>
+      <text >停车历史</text>
     </navigator>
     <navigator class="item">
       <image src="/images/assest/kefu.png" />

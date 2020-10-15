@@ -1,2 +1,62 @@
-<!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+<view class="container">
+  <view class="items">
+      <view class="item">
+        <view class="header">
+          <text>支付凭证</text>
+        </view>
+        <view class="money">
+          <text class="much">付款金额</text>
+          <text class="money-cost">￥30.04</text>
+        </view>
+        <view class="message">
+          <text>收款方：智能停车</text>
+          <text>支付方式：微信零钱</text>
+          <text>停车地点：西安邮电大学</text>
+        </view>
+      </view>
+      <navigator class="detail">
+        <text>查看账单详情</text>
+        <text class="right">></text>
+      </navigator>
+  </view>
+  <view class="items">
+      <view class="item">
+        <view class="header">
+          <text>支付凭证</text>
+        </view>
+        <view class="money">
+          <text class="much">付款金额</text>
+          <text class="money-cost">￥28</text>
+        </view>
+        <view class="message">
+          <text>收款方：智能停车</text>
+          <text>支付方式：微信零钱</text>
+          <text>停车地点：西安邮电大学</text>
+        </view>
+      </view>
+      <navigator class="detail">
+        <text>查看账单详情</text>
+        <text class="right">></text>
+      </navigator>
+  </view>
+  <view class="items">
+      <view class="item">
+        <view class="header">
+          <text>支付凭证</text>
+        </view>
+        <view class="money">
+          <text class="much">付款金额</text>
+          <text class="money-cost">￥14.5</text>
+        </view>
+        <view class="message">
+          <text>收款方：智能停车</text>
+          <text>支付方式：微信零钱</text>
+          <text>停车地点：西安邮电大学</text>
+        </view>
+      </view>
+      <navigator class="detail">
+        <text>查看账单详情</text>
+        <text class="right">></text>
+      </navigator>
+  </view>
+</view>

@@ -1,1 +1,74 @@
 /* pages/message/message.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  position: flex;
+  flex-direction: column-reverse;
+  overflow: scroll;
+  background-color: #f8f8f4;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.container .items{
+  background-color: #fff;
+  width: 500rpx;
+  height: 430rpx;
+  margin: 30rpx 0;
+  border: 1rpx solid white;
+  border-radius: 10rpx;
+}
+
+.container .items .header{
+  width: 100%;
+  height: 50rpx;
+  padding: 10rpx;
+  font-size: 30rpx;
+}
+
+.container .items .money{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 150rpx;
+}
+
+.container .items .money .much{
+  font-size: 25rpx;
+  color: #888;
+}
+
+.container .items .money .money-cost{
+  padding: 20rpx;
+  font-size: 50rpx;
+}
+
+.container .items .message{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150rpx;
+  border-bottom: 1rpx solid rgb(206, 205, 205);
+}
+
+.container .items .message text{
+  display: block;
+  padding: 5rpx;
+  font-size: 28rpx;
+}
+
+.container .items .detail{
+  position: relative;
+  padding: 5rpx;
+  width: 100%;
+}
+
+.container .items .detail .right{
+  position: absolute;
+  right: 20rpx;
+}
