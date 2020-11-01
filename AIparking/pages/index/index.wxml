@@ -8,10 +8,14 @@
   </swiper>
 </view>
 <view class="container">
-  <navigator class="user">
+  <view class="user" wx:if="{{!flag}}">
     <image src="/images/assest/login.png" />
     <text >未登录</text>
-  </navigator>
+  </view>
+  <view class="user" wx:else>
+    <image src="{{avatar}}" />
+    <text >欢迎您，{{name}}</text>
+  </view>
   <view class="list">
     <navigator class="item" url="/pages/search/search" >
       <image src="/images/assest/search.png" />

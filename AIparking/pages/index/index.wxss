@@ -20,6 +20,7 @@ page{
 .container image{
   width: 60rpx;
   height: 60rpx;
+  border-radius: 30%;
 }
 
 .container text{

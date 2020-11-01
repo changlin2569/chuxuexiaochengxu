@@ -17,6 +17,7 @@ page{
   background-color: #fff;
   width: 500rpx;
   height: 430rpx;
+  padding-left: 20rpx;
   margin: 30rpx 0;
   border: 1rpx solid white;
   border-radius: 10rpx;

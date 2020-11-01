@@ -18,10 +18,20 @@ page{
     left: 0;
     margin: auto;
 }
+
 .header .avatar image{
     /* display: block; */
     width: 174rpx;
     height: 174rpx;
+    border-radius: 50%;
+}
+
+.header button{
+    position: absolute;
+    color: #fff;
+    border: none;
+    padding: 0;
+    left: -80rpx;
 }
 
 .header .avatar text{

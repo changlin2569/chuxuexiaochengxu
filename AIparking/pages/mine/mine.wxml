@@ -1,7 +1,11 @@
 <view class="header">
-  <view class="avatar" bindtap="loginHandle">
-    <image src="/images/icon/avatar.png" />
-    <text>点击登录</text>
+  <view class="avatar" bindtap="loginHandle" wx:if="{{!name}}">
+    <image src="/images/icon/avatar.png"  webp="true"/>
+    <button size="16" plain="true" open-type="getUserInfo">点击登录</button>
+  </view>
+  <view class="avatar" bindtap="loginHandle" wx:else>
+    <image src="{{avatar}}" webp="true" />
+    <text open-type="getUserInfo">{{name}}</text>
   </view>
 </view>
 <view class="container">
@@ -10,19 +14,19 @@
     <text class="right">></text>
   </navigator >
   <navigator >
-    <text >常见问题</text>
-    <text class="right" >></text>
-    </navigator >
-  <navigator >
     <text >账单</text>
     <text class="right"  >></text>
     </navigator >
-  <navigator >
+  <navigator url="../timing/timing">
     <text >计时计费</text>
     <text class="right" >></text>
     </navigator >
   <navigator >
     <text >设置</text>
+    <text class="right" >></text>
+    </navigator >
+    <navigator >
+    <text >常见问题</text>
     <text class="right" >></text>
     </navigator >
 </view>

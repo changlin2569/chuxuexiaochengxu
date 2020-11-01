@@ -11,6 +11,6 @@
     <view class="cost">
       <text>花费:{{cost}}元</text>
     </view>
-    <view class="number">陕A88888</view>
+    <view class="number">{{number}}</view>
   </view>
 </view>

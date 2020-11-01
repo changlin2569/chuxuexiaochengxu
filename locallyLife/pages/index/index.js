@@ -25,7 +25,7 @@ Page({
     //   }
     // })
     fetch('slides').then(res => {
-      //  console.log(res);
+       console.log(res);
       this.setData({
         slides: res.data
       })

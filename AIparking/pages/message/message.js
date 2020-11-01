@@ -5,7 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    message: [
+      {
+        moneyCost: 30.04,
+        local: '西安邮电大学',
+      },
+      {
+        moneyCost: 28,
+        local: '西安邮电大学',
+      },
+      {
+        moneyCost: 14.37,
+        local: '西安邮电大学',
+      }
+    ]
   },
 
   /**

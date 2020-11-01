@@ -7,7 +7,8 @@ Page({
   data: {
     flag: true,
     formateTime: '00:00',
-    cost: 0
+    cost: 0,
+    number: '陕A88888',
   },
   formateDate() {
     // console.log(11);
@@ -24,7 +25,7 @@ Page({
       let hour = (date.getHours() - 8) >= 10 ? (date.getHours() - 8) : `0${date.getHours() - 8}`;
       // console.log(that);
       that.setData({
-        cost: hour * 3
+        cost: hour *3 + minute * 0.05,
       })
       
       return (hour == 0 ? '' : `${hour}:`) + minute + ':' + (hour != 0 ? '' : second);
