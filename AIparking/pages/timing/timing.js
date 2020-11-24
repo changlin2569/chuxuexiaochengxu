@@ -10,27 +10,45 @@ Page({
     cost: 0,
     number: '陕A88888',
   },
-  formateDate() {
-    // console.log(11);
+
+  formateDate: function () {
+    console.log(this.data.flag);
+    
+    this.setData({
+      flag: !this.data.flag,
+    })
+
+    if (this.data.flag == true) {
+      this.dateHandle();
+    }
+  },
+
+  // 计时函数
+  dateHandle: function () {
     if(!this.data.flag) return;
     let now = Date.now();
     let that = this;
     let formateTime = function (time) {
-      if (!time) return '';
+      if (!time) {
+        return '';
+      } else if (!that.data.flag) {
+        clearInterval(timer);
+      }
       let nowDate = Date.now();
       let timing = nowDate - time;
       let date = new Date(timing);
-      let minute = date.getMinutes() >= 10 ? date.getMinutes() : `0${date.getMinutes()}`;
       let second = date.getSeconds() >= 10 ? date.getSeconds() : `0${date.getSeconds()}`;
+      let minute = date.getMinutes() >= 10 ? date.getMinutes() : `0${date.getMinutes()}`;
       let hour = (date.getHours() - 8) >= 10 ? (date.getHours() - 8) : `0${date.getHours() - 8}`;
+      let cost = hour *3 + minute * 0.05;
       // console.log(that);
       that.setData({
-        cost: hour *3 + minute * 0.05,
+        cost: cost.toFixed(2),
       })
       
       return (hour == 0 ? '' : `${hour}:`) + minute + ':' + (hour != 0 ? '' : second);
     }
-    setInterval(function () {
+    var timer = setInterval(function () {
       // console.log(this);
       var timing = formateTime(now);
       that.setData({
@@ -42,8 +60,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.formateDate();
-  },
+      this.dateHandle();
+    },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
